@@ -16,6 +16,15 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development, :test do
+  gem 'pry-rails'
+  gem 'rspec-rails'
+  gem 'erb2haml'
+  # gem 'shoulda'
+  # gem 'database_cleaner'
+  # gem 'capybara'
+end
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
