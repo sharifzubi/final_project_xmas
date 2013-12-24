@@ -1,0 +1,49 @@
+$chelsea-blue       : #0004FF;
+$blue-mid           : #566E9C;
+$blue-light         : #71B9D1;
+$black              : #000000;
+$black-light        : #16262B;
+$grey_dark          : #303233;
+$grey_mid           : #212323;
+$grey_light         : #ABC4CA;
+$main               : #4791D1;
+
+/***** Panels *************************************/
+
+#sign-in {
+  margin: 0 auto;
+  width: 300px;
+
+  .sign-in-box {
+    background: white;
+    border: 7px solid;
+    margin-top: 57px;
+    padding: 12px;
+
+    .sign-in-title {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+  }
+
+  .sign-in-view {
+    padding: 10px;
+    font-size: 20px;
+  }
+}
+
+.sign-up-view {
+  padding-bottom: 15px;
+  padding-left: 15px;
+  font-size: 20px;
+}
+
+
+
+.row {
+  margin-left: 0px;
+
+  .panel-heading {
+    background-color: #4791D1;
+  }
+}

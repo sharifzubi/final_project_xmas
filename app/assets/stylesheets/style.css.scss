@@ -1,0 +1,235 @@
+$chelsea-blue       : #0004FF;
+$blue-mid           : #566E9C;
+$blue-light         : #71B9D1;
+$black              : #000000;
+$black-light        : #16262B;
+$grey_dark          : #303233;
+$grey_mid           : #212323;
+$grey_light         : #ABC4CA;
+$main               : #4791D1;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Nixie One', verdana;
+}
+
+a:hover {
+  opacity: 0.4;
+  color: #000;
+}
+
+#map-canvas {
+  height: 90%;
+  border: 7px solid #71B9D1;
+}
+
+.nav-avatar {
+  height: 50px;
+  position: relative;
+  // border-radius: 30%;
+}
+
+img {
+  width: 320px;
+  height: 250px;
+  // border: 7px solid;
+}
+
+// DASHBOARD
+
+.photos-dash {
+  margin: 0 auto;
+  text-align: center;
+  background: aliceblue;
+  padding-top: 25px;
+
+  .photo-dash {
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    padding-left: 10px;
+    font-weight: bold;
+
+    .picture {
+      border: 5px solid #4791D1;
+
+      img {
+        margin: 0;
+        padding: 0;
+      }
+    }
+  }
+  .add_photo_box {
+    width: 350px;
+    height: 260px;
+    background: aliceblue;
+    color: white;
+    font-size: 10em;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-left: 10px;
+    font-weight: bold;
+    padding: 0;
+    padding-left: 10px;
+  }
+
+}
+
+
+.photo-add-link {
+  display: inline-block;
+  padding: 7px 11px;
+  margin-top: 8px 0;
+  position: relative;
+  background: white;
+  background-color: aliceblue;
+  font-weight: bold;
+  font-size: 17px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 20px;
+  // margin-bottom: 20px;
+}
+
+
+
+// JOURNEY
+.journey-header {
+  text-align: center;
+}
+
+.container-jour {
+  height: 80%;
+  background: aliceblue;
+}
+
+#places_form {
+  // height: 5%;
+}
+
+#autocomplete {
+  // color: #0004FF;
+  height: 9%;
+  width: 525px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  margin-left: 70px;
+  text-align: center;
+}
+
+
+// USERS ALL
+
+.photos-users-index {
+  text-align: center;
+  .photo-users-index {
+    display: inline-block;
+    margin-left: 20px;
+    border-image: 50px white;
+    font-weight: bold;
+  }
+  .user-avatar {
+    border: 10px solid #4791D1;
+  }
+}
+
+
+// USER SHOW PAGE
+
+.users-show {
+  // border-left: 3px solid #4791D1;
+  // border-right: 3px solid #4791D1;
+
+  .row {
+    padding-bottom: 80px;
+  }
+  .user-show-username {
+    border-bottom: 2px solid #4791D1;
+    text-align: center;
+  }
+
+  .user-show-name {
+    font-size: 22px;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .user-show-avatar {
+    padding-left: 10px;
+    // border: 2px solid;
+  }
+  .user-show-right {
+    padding-left: 50px;
+    padding-top: 65px;
+  }
+  .user-show-left {
+    // padding-left: 50px;
+    // padding-top: 65px;
+  }
+  .user-show-location {
+    padding: 20px;
+  }
+  .user-show-aboutme {
+    padding: 20px;
+  }
+  .user-profile-link {
+    text-align: center;
+    padding: 7px 11px;
+    position: relative;
+    background-color: black;
+    font-size: 17px;
+
+  }
+}
+
+
+// PHOTOS NEW PAGE
+
+#photos-new-page {
+  margin-top: 20px;
+  background: aliceblue;
+  padding: 40px;
+
+  .photos-new {
+    padding-left: 25px;
+  }
+}
+
+#photos-form {
+  padding: 25px;
+  margin-top: 30px;
+  border: 2px solid;
+
+  .photo-text {
+    padding-bottom: 10px;
+  }
+  .photo-image {
+    padding-bottom: 10px;
+  }
+  .photo-memory {
+    padding-bottom: 22px;
+  }
+  .photo-location {
+    padding-bottom: 25px;
+  }
+}
+
+// EXTRAS
+
+ul {
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  padding-right: 40px;
+}
+
+.links {
+  text-align: right;
+  padding-right: 14px;
+}
