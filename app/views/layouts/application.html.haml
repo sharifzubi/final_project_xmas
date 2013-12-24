@@ -9,6 +9,32 @@
     = csrf_meta_tags
 
 
-  %body
+    %body
+      %nav.nav
+        = link_to root_url do
+          %img.logo{src: "/assets/neeeha.jpg"}
 
-  = yield
+        - flash.each do |name, msg|
+          = content_tag :div, msg, :id => "flash_#{name}"
+        - if user_signed_in?
+          %logged_in
+            %ul.left
+              .link.dashboard.link-style
+                = link_to 'DASHBOARD', dashboard_path
+              .link.journey.link-style
+                = link_to 'JOURNEY', journey_path
+            %ul.right
+              =link_to current_user do
+                .link.avatar
+                  = image_tag current_user.avatar, {:class => 'nav-avatar'}
+                .link.logout
+                  = link_to 'LOGOUT',  destroy_user_session_path, method: :delete
+        - else
+          %ul
+          .nav-links
+            .link.sign_up
+              = link_to 'SIGN-UP', new_user_registration_path, {:class => 'sign-up-link'}
+            .link.sign_in
+              = link_to 'LOGIN', new_user_session_path
+
+    = yield

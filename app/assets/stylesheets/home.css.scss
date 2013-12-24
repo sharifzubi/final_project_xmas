@@ -1,0 +1,148 @@
+$chelsea-blue       : #0004FF;
+$blue-mid           : #566E9C;
+$blue-light         : #71B9D1;
+$blue-in-use        : #4791D1;
+$black              : #000000;
+$black-light        : #16262B;
+$grey_dark          : #303233;
+$grey_mid           : #212323;
+$grey_light         : #ABC4CA;
+$main               : #4791D1;
+
+
+.slider {
+  width: 100%; /* Update to your slider width */
+  height: 600px; /* Update to your slider height */
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+.slider li {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+img.carousel {
+  margin: 0px;
+  width: 100%;
+  height: 100%;
+  border: 7px solid #000;
+}
+
+img.logo {
+  float: left;
+  padding-left: 20px;
+  margin-left: 20px;
+  padding-bottom: 3px;
+  width: 150px;
+  height: 85px;
+}
+
+img.nav-avatar {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: 2px solid white;
+}
+
+.nav {
+  // position:fixed;
+  top:0;
+  left:0;
+  bottom:50px;
+  right:0;
+  height:15%;
+  background: white;
+  // border-bottom:1px solid #444;
+}
+
+.nav ul.right {
+  float: right;
+  margin-right:1em;
+  list-style-type:none;
+  font-weight: bold;
+}
+
+.nav ul.left {
+  height: 100%;
+  line-height: 100%;
+  margin-top: 0;
+  float: left;
+  // padding:10px;
+  list-style-type:none;
+  font-weight: bold;
+}
+
+.logged_out {
+  margin-left: 2em;
+}
+
+.nav-links .link {
+  margin-left: 2em;
+}
+
+.sign_up {
+  float: right;
+  padding: 10px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-left: 8px;
+  margin-top: 8px;
+  position: relative;
+  background: white;
+  font-weight: bold;
+  font-size: 18px;
+
+}
+.sign_in {
+  float: right;
+  padding: 10px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  margin-top: 8px;
+  position: relative;
+  background: white;
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+
+.link-style {
+  float: left;
+  padding-right: 40px;
+  padding-top: 32px;
+  margin-top: 0;
+  position: static;
+  background: white;
+  font-weight: bold;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+// .journey {
+//   float: left;
+//   padding-left: 25px;
+//   padding-top: 30px;
+//   margin-top: 0;
+//   position: static;
+//   background: white;
+//   font-weight: bold;
+//   font-size: 25px;
+//   font-weight: 300;
+
+// }
+
+
+.logout {
+  padding-left: 6px;
+  color: #0004FF;
+  font-weight: 200;
+}
