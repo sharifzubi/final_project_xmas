@@ -7,6 +7,7 @@ class Photo < ActiveRecord::Base
   ### ASSOCIATIONS
   belongs_to :user
   has_many :memories
+  has_many :favourites
   has_one :location
 
   ### NESTED MODEL FORMS
