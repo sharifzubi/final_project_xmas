@@ -1,0 +1,28 @@
+%body
+  .container
+    .users-show
+      .user-show-username
+        %h1= @user.username
+
+      .row
+        .user-show-left.col-md-4
+          .user-show-name
+            %p
+              %b= @user.first_name
+              %b= @user.last_name
+          .user-show-avatar
+            = image_tag @user.avatar
+
+        .user-show-right.col-md-4
+          .user-show-location
+            %p
+              %b Favourite Location:
+              = @user.favourite_location
+          .user-show-aboutme
+            %p
+              %b About Me:
+              = @user.about_me
+
+      - if current_user # if current user LOGGED IN, then show...
+        .user-profile-link
+          = link_to "Update Profile", edit_user_registration_path

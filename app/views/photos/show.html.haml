@@ -1,0 +1,32 @@
+- if current_user.admin == true
+  %h2= @photo.title
+  = image_tag @photo.image
+  %br/
+  = link_to "Delete Photo", photo_path(photo), method: :delete
+- else
+  %h2= @photo.title
+  = image_tag @photo.image
+
+/ - if current_user.admin == true
+/   - @photos.each do |photo|
+/     %h2= @photo.title
+/     = image_tag @photo.image
+/     %br/
+/     = link_to "Delete Photo", photo_path(photo), method: :delete
+/ - else
+/   - @photos.each do |photo|
+/     %h2= @photo.title
+/     = image_tag @photo.image
+
+
+
+/ To show MEMORIES or not to show MEMORIES... that is my question?!?
+
+/ %h5 Memories
+
+/ - @photo.memories.each do |memory|
+/   .photo-memory
+/   %p
+/     = memory.text
+/     \::
+/     = memory.user.username

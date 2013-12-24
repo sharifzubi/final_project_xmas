@@ -1,0 +1,8 @@
+%h1 Photos
+
+- @photos.each do |photo|
+  %h3= photo.title
+  %h3= image_tag photo.image
+  / = link_to "Delete", photo_path(photo), method: :delete
+  / |\
+  / = link_to "Edit", edit_photo_path(photo)

@@ -1,0 +1,22 @@
+%h1 Users
+
+- if current_user && current_user.admin == true
+  .photos-users-index
+    - @users.each do |user|
+      .photo-users-index
+        .username
+          %h3= link_to user.username, user_path(user)
+        .user-avatar
+          = image_tag user.avatar
+          %br/
+        .user-link-delete
+          = link_to "Delete User", user_path(user), method: :delete
+- else
+  .photos-users-index
+    - @users.each do |user|
+      / %h3= link_to user.username, user_path(user)
+      .photo-users-index
+        .username
+          %h3= user.username
+        .user-avatar
+          =  image_tag user.avatar

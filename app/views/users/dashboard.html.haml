@@ -1,0 +1,27 @@
+%body.dash
+  .photos-dash.col-md-12
+    - if @photos.present?
+      - @photos.each do |photo|
+        .photo-dash.col-md-4
+          .title
+            = photo.title
+          .picture
+            = link_to photo.image_url, class: 'image' do
+              = image_tag photo.image_url(:thumb), class: "col-md-12"
+            .clearfix
+          .links
+            = link_to "Delete", photo_path(photo), method: :delete
+            |
+            = link_to "Edit", edit_photo_path(photo)
+          .memories
+            %ul
+              - photo.memories.each do |memory|
+                %li= memory.text
+          .location
+            / = photo.location.address unless photo.location.nil?
+            = "Location: #{photo.location.address}" unless photo.location.nil?
+      .col-md-4.add_photo_box= link_to "+", new_photo_path
+      .clearfix
+
+    - else
+      .col-md-4.add_photo_box= link_to "+", new_photo_path

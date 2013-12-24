@@ -1,0 +1,10 @@
+%h2 Add a new Memory
+
+= form_for([@photo, @memory]) do |f|
+  .field
+    = f.label :text
+    = f.text_field :text
+    = hidden_field_tag :photo_id, @photo.id
+    %br/
+
+    = f.submit class: "btn btn-primary"

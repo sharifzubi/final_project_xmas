@@ -1,0 +1,14 @@
+!!!
+%html
+
+%body.jour
+  .container-jour
+    %form#places_form
+      .row{role: "search"}
+    %input#autocomplete
+      .form{placholder: "search", type: "text"}
+
+    #map-canvas
+
+    :javascript
+      window.photos = #{@photos.to_json}

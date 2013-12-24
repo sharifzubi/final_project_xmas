@@ -1,0 +1,7 @@
+%h3 Memories
+
+- @memories.each do |memory|
+  %h3= memory.text
+  = link_to "Delete", memory_path(memory), method: :delete
+  |\
+  = link_to "Edit", edit_memory_path(memory)

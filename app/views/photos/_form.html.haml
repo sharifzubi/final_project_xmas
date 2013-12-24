@@ -1,0 +1,25 @@
+#photos-form
+  = form_for(@photo) do |f|
+    .photo-text
+      = f.label :title
+      = f.text_field :title
+      %br/
+
+    .photo-image
+      = f.label :image
+      = f.file_field :image
+      %br/
+
+    .photo-memory
+      = f.fields_for :memories do |f|
+        = f.label :memory
+        = f.text_field :text
+      %br/
+
+    .photo-location
+      = f.fields_for :location do |f|
+        = f.label :address
+        = f.text_field :address
+      %br
+    .photo-button
+      = f.submit class: "btn btn-primary"
