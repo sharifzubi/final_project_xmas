@@ -17,10 +17,10 @@ class Photo < ActiveRecord::Base
   # accepts_nested_attributes_for :location
 
   ### CARRIERWAVE
-#   mount_uploader :image, ImageUploader
+  mount_uploader :image, ImageUploader
 
 
-#   def as_json(options = {})
-#     super options.merge(:methods => [:location, :title, :image], :only => [:id, :latitude, :longitude])
-#   end
+  def as_json(options = {})
+    super options.merge(:methods => [:location, :title, :image], :only => [:id, :latitude, :longitude])
+  end
 end

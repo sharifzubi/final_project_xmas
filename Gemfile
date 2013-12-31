@@ -11,6 +11,9 @@ gem 'cancan'
 
 gem 'carrierwave'
 gem 'fog', '~> 1.3.1'
+gem 'rmagick'
+
+gem 'geocoder'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -30,6 +33,7 @@ group :development, :test do
 end
 
 gem 'jquery-rails'
+gem 'fancybox2-rails', '~> 0.2.4'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

@@ -1,5 +1,4 @@
-!!!
-%html
+%script{src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyCyjPnob22nV_GJZJqiiuUGR-DvSaPq5vI&sensor=false&libraries=places"}
 
 %body.jour
   .container-jour
@@ -12,3 +11,4 @@
 
     :javascript
       window.photos = #{@photos.to_json}
+=javascript_include_tag 'script'

@@ -4,6 +4,7 @@
     %title Final Project
     = stylesheet_link_tag    "application", :media => "all"
 
+    %link{href: 'http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600', rel: 'stylesheet', type: 'text/css'}/
 
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -22,7 +23,7 @@
               .link.dashboard.link-style
                 = link_to 'DASHBOARD', dashboard_path
               .link.journey.link-style
-                = link_to 'JOURNEY', journey_path
+                = link_to 'JOURNEY', journey_path(current_user.id)
             %ul.right
               =link_to current_user do
                 .link.avatar

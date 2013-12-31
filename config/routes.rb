@@ -14,7 +14,9 @@ Project3Ii::Application.routes.draw do
     resources :memories
   end
 
-  # get   'dashboard',        :to => "users#dashboard"
+  get   'dashboard',        :to => "users#dashboard"
+  get   'journey/:id',      :to => "users#journey",  :as => "journey"
+  post  'users/like', :to => "users#like"
   # get   'journey',          :to => "users#journey"
 
 end

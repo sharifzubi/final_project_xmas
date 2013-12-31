@@ -32,7 +32,18 @@ class UsersController < ApplicationController
   end
 
   def journey
-    @photos = current_user.photos.includes(:location)
+    user = User.find(params[:id])
+    @photos = user.photos.includes(:location)
     @locations
+
+    # render :partial => 'journey'
+  end
+
+  def like
+    success = false
+    if current_user.present?
+      success = true if Favourite.create(user_id: current_user.id, photo_id: params[:photo_id])
+    end
+    render json: {:success => success}
   end
 end
