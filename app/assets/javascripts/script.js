@@ -62,6 +62,25 @@ function initialize() {
 }
 
 google.maps.event.addDomListener(window, 'load', initialize);
+
+// AJAX
+// $('.new_user').on('submit', function (e) {
+
+//   var form = $(e.currentTarget);
+//   var username = $('#user_email').val();
+//   var data = {
+//     'user[email]': username
+//   }
+
+//   $.ajax({
+//     url: '',
+//     data: data
+//   }).success(function (returnValue) {
+//     console.log(returnValue)
+//   }).error(function (returnValue) {
+
+//   })
+
 $('#like_link').click(function(e){
   id = $('#like_link').data('id');
   $.ajax({
