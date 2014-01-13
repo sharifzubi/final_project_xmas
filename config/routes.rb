@@ -16,7 +16,7 @@ Project3Ii::Application.routes.draw do
 
   get   'dashboard',        :to => "users#dashboard"
   get   'journey/:id',      :to => "users#journey",  :as => "journey"
-  post  'users/like', :to => "users#like"
+  post  'users/like',       :to => "users#like"
   # get   'journey',          :to => "users#journey"
 
 end
